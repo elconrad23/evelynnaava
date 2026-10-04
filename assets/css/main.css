@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-ink font-body antialiased;
+}
+
+::selection {
+  @apply bg-pink/30;
+}
+
+:focus-visible {
+  outline: 2px solid #EA4894;
+  outline-offset: 3px;
+}
+
+@layer base {
+  h1, h2, h3 {
+    @apply font-display text-navy;
+  }
+}
+
+.eyebrow {
+  @apply font-heading text-[13px] tracking-wide text-pink font-semibold;
+}
+
+.container-page {
+  @apply mx-auto max-w-content px-5 sm:px-8 lg:px-10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-navy text-white font-heading font-semibold text-sm px-6 py-3.5 transition-colors duration-200 hover:bg-navy-dark;
+}
+
+.btn-accent {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-pink text-white font-heading font-semibold text-sm px-6 py-3.5 transition-colors duration-200 hover:bg-pink-dark;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-navy text-navy font-heading font-semibold text-sm px-6 py-3.5 transition-colors duration-200 hover:bg-navy hover:text-white;
+}
+
+/* Ring motif echoing the logo mark, used sparingly as one signature device */
+.brand-ring {
+  position: relative;
+  width: 100%;
+  max-width: 24rem;
+  margin-inline: auto;
+  isolation: isolate;
+}
+.brand-ring::before {
+  content: '';
+  position: absolute;
+  inset: 3% -3% 5%;
+  border: 2px solid rgb(44 45 109 / 28%);
+  border-radius: 9999px;
+  clip-path: polygon(0 0, 38% 0, 38% 18%, 100% 18%, 100% 100%, 0 100%);
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 72%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 72%, transparent);
+}
+
+.portrait-blend {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top;
+  /* Fade every edge while keeping the face and center of the portrait crisp. */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 14%, #000 86%, transparent),
+    linear-gradient(to bottom, transparent, #000 8%, #000 76%, transparent);
+  mask-image:
+    linear-gradient(to right, transparent, #000 14%, #000 86%, transparent),
+    linear-gradient(to bottom, transparent, #000 8%, #000 76%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+
+.field {
+  @apply w-full rounded-lg border border-navy/15 bg-white px-4 py-3 text-sm text-ink placeholder:text-ink/40 focus:border-pink focus:ring-1 focus:ring-pink transition;
+}
+
+.field-label {
+  @apply block font-heading text-xs font-semibold uppercase tracking-wide text-navy/80 mb-1.5;
+}
