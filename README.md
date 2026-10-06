@@ -57,3 +57,4 @@ No code changes are needed — both forms will start delivering automatically.
 
 This is a standard Nuxt 3 app — deploy to Vercel, Netlify, or any Node host with `npm run build` (or `npm run generate` for a static build, though the contact/newsletter API routes require a server runtime, e.g. Vercel/Netlify functions or Node).
 # evelynoldmutual
+# evelynnaava
