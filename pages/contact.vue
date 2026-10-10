@@ -146,7 +146,7 @@ async function submit() {
           </div>
           <div class="rounded-2xl border border-navy/10 bg-white p-5">
             <p class="font-heading text-sm font-semibold text-navy">Email</p>
-            <a href="mailto:hello@evelynnaava.com" class="mt-1 block text-sm text-ink/70 hover:text-pink">hello@evelynnaava.com</a>
+            <a href="mailto:evelynnaava185@gmail.com" class="mt-1 block text-sm text-ink/70 hover:text-pink">hello@evelynnaava.com</a>
             <p class="mt-1 text-xs text-ink/45">I typically reply within 24 hours</p>
           </div>
           <div class="rounded-2xl border border-navy/10 bg-white p-5">
