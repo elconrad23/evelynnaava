@@ -29,8 +29,8 @@ const year = new Date().getFullYear()
         <p class="font-heading text-sm font-semibold">Get in touch</p>
         <ul class="mt-4 space-y-2 text-sm text-white/70">
           <li>Kampala, Uganda</li>
-          <li><a href="tel:+256700123456" class="hover:text-pink-light">+256 700 123 456</a></li>
-          <li><a href="mailto:hello@evelynnaava.com" class="hover:text-pink-light">hello@evelynnaava.com</a></li>
+          <li><a href="tel:+256776933339" class="hover:text-pink-light">+256 776933339</a></li>
+          <li><a href="mailto:evelynnaava185@gmail.com" class="hover:text-pink-light">evelynnaava185@gmail.com</a></li>
           <li><NuxtLink to="/contact" class="hover:text-pink-light">Contact form →</NuxtLink></li>
         </ul>
       </div>

@@ -136,7 +136,7 @@ async function submit() {
         <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <div class="rounded-2xl border border-navy/10 bg-white p-5">
             <p class="font-heading text-sm font-semibold text-navy">Call Me</p>
-            <a href="tel:+256700123456" class="mt-1 block text-sm text-ink/70 hover:text-pink">+256 751660828 / +256 776933339</a>
+            <a href="tel:+256776933339" class="mt-1 block text-sm text-ink/70 hover:text-pink">+256 751660828 / +256 776933339</a>
             <p class="mt-1 text-xs text-ink/45">Mon – Fri, 8:00 AM – 6:00 PM</p>
           </div>
           <div class="rounded-2xl border border-navy/10 bg-white p-5">
